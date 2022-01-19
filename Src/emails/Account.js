@@ -1,7 +1,6 @@
 /*Importing env variables using dotenv module*/
 import mail from "@sendgrid/mail";
-import { config } from "dotenv";
-config();
+
 const KEY = process.env.SEND_GRID_KEY;
 const sgMail = mail;
 sgMail.setApiKey(KEY);

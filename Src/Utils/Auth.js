@@ -1,7 +1,5 @@
-import { config } from "dotenv";
 import jsonwebtoken from "jsonwebtoken";
 import { User } from "../db/models/users.js";
-config();
 const secretkey = process.env.JSON_SECRET_KEY;
 export default async function Auth(req, res, next) {
   try {

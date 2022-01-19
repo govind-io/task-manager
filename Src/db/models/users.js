@@ -3,8 +3,6 @@ import validator from "validator";
 import bcrypt from "bcrypt";
 import jsonwebtoken from "jsonwebtoken";
 import { Task } from "./tasks.js";
-import { config } from "dotenv";
-config();
 const secretkey = process.env.JSON_SECRET_KEY;
 
 const UserSchema = mongoose.Schema(
