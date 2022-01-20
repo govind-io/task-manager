@@ -8,7 +8,7 @@ taskRoutes.post("", Auth, async function (req, res) {
     await task.save();
     res.status(201).send(task);
   } catch (error) {
-    res.status(400).send(error);
+    res.status(400).send(error.message);
   }
 });
 
